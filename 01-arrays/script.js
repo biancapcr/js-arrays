@@ -43,10 +43,12 @@ teachers.length = teachers.length - 1;
 // Elemento rimosso
 console.log('firstTeacher:', firstTeacher);
 // Array aggiornato        
-console.log('array aggiornato:', teachers); 
+console.log('array updated:', teachers); 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
-
+teachers[teachers.length] = 'Vanessa';
+// Verifica
+console.log('after adding Vanessa:', teachers);
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
