@@ -8,6 +8,9 @@ const teachers = [
   'Luca'
 ]; // NON MODIFICARE QUESTA VARIABILE
 
+//Completamento esercizio senza totale utilizzo di metodi array
+
+
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
 const reversedTeachers = [];
@@ -43,6 +46,20 @@ const isFabioPresent = teachers.indexOf('Fabio') !== -1;
  // Verifica
  console.log('Fabio present:', isFabioPresent);
 
- 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+const teachersString = teachers.join(',');
+ // Verifica
+console.log('joined string:', teachersString);
+
+// OR
+
+let teachersString = '';
+for (let i = 0; i < teachers.length; i++){
+  teachersString += teachers[i];
+  if (i < teachers.length - 1){
+    teachersString += ',';
+  }
+}
+
+ // Verifica
+console.log('joined string:', teachersString);
