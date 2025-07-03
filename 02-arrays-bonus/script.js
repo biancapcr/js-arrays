@@ -53,13 +53,13 @@ console.log('joined string:', teachersString);
 
 // OR
 
-let teachersString = '';
+let teachersStringg = '';
 for (let i = 0; i < teachers.length; i++){
-  teachersString += teachers[i];
+  teachersStringg += teachers[i];
   if (i < teachers.length - 1){
-    teachersString += ',';
+    teachersStringg += ',';
   }
 }
 
  // Verifica
-console.log('joined string:', teachersString);
+console.log('joined string:', teachersStringg);
