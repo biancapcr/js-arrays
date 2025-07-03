@@ -33,7 +33,17 @@ console.log('lastTeacher:', lastTeacher);
 console.log('updated:', teachers);
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
+const firstTeacher = teachers[0];
+for (let i = 0; i < teachers.length - 1; i++){
+  teachers[i] = teachers[i + 1];
+}
+// Riduco length per eliminare ultimo elemento duplicato
+teachers.length = teachers.length - 1;
+// Verifica
+// Elemento rimosso
+console.log('firstTeacher:', firstTeacher);
+// Array aggiornato        
+console.log('array aggiornato:', teachers); 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
