@@ -18,7 +18,6 @@ for (let i = 0; i < teachers.length; i++){
     teachers[i] = 'Patrick';
   }
 }
-
 // Verifica
 console.log(teachers);
 
@@ -65,4 +64,6 @@ console.log('Lewis index:', lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+const isTeachersEmpty = (teachers.length === 0);
+ // Verifica
+console.log('empty:', isTeachersEmpty);
