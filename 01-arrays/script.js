@@ -57,9 +57,11 @@ for (let i = teachers.length; i > 0; i--){
 teachers[0] = 'Sarah';
  // Verifica
 console.log('added Sarah:', teachers);
+
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+const lewisIndex = teachers.indexOf('Lewis');
+console.log('Lewis index:', lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
