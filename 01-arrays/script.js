@@ -24,12 +24,12 @@ console.log(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = teachers[teachers.length - 1];
-// Riduco per tagliare ultimo elemento
+ // Riduco per tagliare ultimo elemento
 teachers.length = teachers.length - 1;
-// Verifica
-// Stampa nome rimosso
+  // Verifica
+  // Stampa nome rimosso
 console.log('lastTeacher:', lastTeacher); 
-// Stampa array aggiornato
+  // Stampa array aggiornato
 console.log('updated:', teachers);
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
@@ -37,20 +37,26 @@ const firstTeacher = teachers[0];
 for (let i = 0; i < teachers.length - 1; i++){
   teachers[i] = teachers[i + 1];
 }
-// Riduco length per eliminare ultimo elemento duplicato
+ // Riduco length per eliminare ultimo elemento duplicato
 teachers.length = teachers.length - 1;
-// Verifica
-// Elemento rimosso
+ // Verifica
+  // Elemento rimosso
 console.log('firstTeacher:', firstTeacher);
-// Array aggiornato        
+  // Array aggiornato        
 console.log('array updated:', teachers); 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 teachers[teachers.length] = 'Vanessa';
-// Verifica
+ // Verifica
 console.log('after adding Vanessa:', teachers);
-// 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
+// 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+for (let i = teachers.length; i > 0; i--){
+  teachers[i] = teachers[i - 1];
+}
+teachers[0] = 'Sarah';
+ // Verifica
+console.log('added Sarah:', teachers);
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 const lewisIndex = null;
